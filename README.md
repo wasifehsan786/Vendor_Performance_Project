@@ -163,32 +163,40 @@ Word Report + PowerPoint Presentation
 ## How to Run
 
 ### 1. Clone the repository
-```bash
-git clone [Vendor Performance Project](https://github.com/wasifehsan786/Vendor_Performance_Project)
 
-**2. Create virtual environment**
+```bash
+git clone https://github.com/wasifehsan786/Vendor_Performance_Project.git
+cd Vendor_Performance_Project
+```
+
+### 2. Create virtual environment
+
 ```bash
 py -m venv venv
 venv\Scripts\activate
 ```
 
-**3. Install dependencies**
+### 3. Install dependencies
+
 ```bash
 pip install pandas sqlalchemy pyodbc matplotlib seaborn scipy
 ```
 
-**4. Set up SQL Server**
+### 4. Set up SQL Server
+
 - Create a database named `VendorPerformanceDB` in SSMS
 - Update the server name in notebooks if different from `Wasif\SQLExpress`
 
-**5. Run notebooks in order**
-```
+### 5. Run notebooks in order
+
+```text
 01_ingest_db.ipynb                       → Load data into SQL Server
 02_sql_exploration.ipynb                 → SQL EDA and table creation
 03_vendor_performance_analysis.ipynb     → Python analysis
 ```
 
-**6. Open Power BI dashboard**
+### 6. Open Power BI dashboard
+
 - Open `dashboards/` folder and launch the `.pbix` file
 - Refresh data connection to your SQL Server
 
@@ -196,4 +204,4 @@ pip install pandas sqlalchemy pyodbc matplotlib seaborn scipy
 
 ## Author
 
-**Wasif Ehsan**    
+**Wasif Ehsan**
