@@ -1,0 +1,35 @@
+2026-05-25 15:01:41,729 - INFO - === Vendor Performance Analysis Started ===
+2026-05-25 15:01:41,729 - INFO - Step 1: Connected to InventoryDB using ODBC Driver 17 for SQL Server
+2026-05-25 15:01:41,729 - INFO - Step 2: Loaded vendor_sales_summary table — 8,891 rows, 18 columns
+2026-05-25 15:01:41,729 - INFO - Step 3: Summary Statistics — identified negative profit, inf margins, high turnover outliers
+2026-05-25 15:01:41,729 - INFO - Step 4: Distribution plots generated for 8 key variables — all right-skewed except ProfitMargin
+2026-05-25 15:01:41,730 - INFO - Step 5: Outliers NOT removed — may represent premium high-value brands
+2026-05-25 15:01:41,730 - INFO - Step 6: Correlation Heatmap — PurchaseQty vs SalesQty = 1.00, SalesDollars vs GrossProfit = 0.98
+2026-05-25 15:01:41,730 - INFO - Step 7: RQ1 — 193 target brands identified: low sales (< $577) and high margin (> 65%)
+2026-05-25 15:01:41,730 - INFO - Step 8: RQ1 — Scatter plot saved to ../reports/rq1_target_brands.png
+2026-05-25 15:01:41,731 - INFO - Step 9: RQ2 — Top vendor: DIAGEO NORTH AMERICA INC — $67.99M in sales
+2026-05-25 15:01:41,731 - INFO - Step 10: RQ2 — Top brand: Jack Daniels No 7 Black — $7.96M in sales
+2026-05-25 15:01:41,731 - INFO - Step 11: RQ2 — Bar charts saved to ../reports/rq2_top_vendors_brands.png
+2026-05-25 15:01:41,731 - INFO - Step 12: RQ3 — Top 10 vendors contribute 64.72% of total purchases
+2026-05-25 15:01:41,731 - INFO - Step 13: RQ3 — DIAGEO alone accounts for 16.06% — high concentration risk
+2026-05-25 15:01:41,731 - INFO - Step 14: RQ3 — Pareto chart saved to ../reports/rq3_purchase_contribution.png
+2026-05-25 15:01:41,731 - INFO - Step 15: RQ4 — UnitPurchasePrice = TotalPurchaseDollars / TotalPurchaseQuantity
+2026-05-25 15:01:41,731 - INFO - Step 16: RQ4 — Orders bucketed into Small / Medium / Large using pd.qcut
+2026-05-25 15:01:41,731 - INFO - Step 17: RQ4 — Small: $41.38 | Medium: $15.42 | Large: $10.74 per unit
+2026-05-25 15:01:41,731 - INFO - Step 18: RQ4 — 74% cost reduction from small to large orders confirmed
+2026-05-25 15:01:41,732 - INFO - Step 19: RQ4 — Bar + Box plot saved to ../reports/rq4_bulk_purchasing.png
+2026-05-25 15:01:41,732 - INFO - Step 20: RQ5 — Filtered vendors with StockTurnover < 1.0
+2026-05-25 15:01:41,732 - INFO - Step 21: RQ5 — ALISA CARR BEVERAGES lowest turnover at 0.615
+2026-05-25 15:01:41,732 - INFO - Step 22: RQ5 — All 10 flagged vendors below target of 1.0
+2026-05-25 15:01:41,732 - INFO - Step 23: RQ5 — Bar chart saved to ../reports/rq5_low_turnover.png
+2026-05-25 15:01:41,732 - INFO - Step 24: RQ6 — UnsoldInventoryValue = (TotalPurchaseQty - TotalSalesQty) x ActualPrice
+2026-05-25 15:01:41,732 - INFO - Step 25: RQ6 — Total unsold capital: $3.66 Million
+2026-05-25 15:01:41,733 - INFO - Step 26: RQ6 — DIAGEO leads with $984.2K unsold inventory
+2026-05-25 15:01:41,733 - INFO - Step 27: RQ6 — Chart saved to ../reports/rq6_unsold_inventory.png
+2026-05-25 15:01:41,733 - INFO - Step 28: RQ7 — 95% CI Top Vendors: 30.89% to 31.74% profit margin
+2026-05-25 15:01:41,733 - INFO - Step 29: RQ7 — 95% CI Low Vendors: 40.65% to 42.74% — low performers have HIGHER margins
+2026-05-25 15:01:41,733 - INFO - Step 30: RQ8 — T-Statistic: -17.9851 | P-Value: 0.000000 — REJECT H0
+2026-05-25 15:01:41,733 - INFO - Step 31: RQ7 & RQ8 — Plot saved to ../reports/rq7_rq8_confidence_hypothesis.png
+2026-05-25 15:01:41,733 - INFO - Step 32: Exported final dataframe to ../data/vendor_sales_summary.csv for Power BI
+2026-05-25 15:01:41,733 - INFO - Step 33: Final dataset — 8,891 rows, 18 columns
+2026-05-25 15:01:41,733 - INFO - === Vendor Performance Analysis Completed Successfully ===

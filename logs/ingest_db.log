@@ -1,0 +1,8 @@
+2026-05-24 13:45:40,763 - INFO - === Ingestion Started ===
+2026-05-24 13:45:40,764 - INFO - Inserted: vendor_invoice - Rows: 5543
+2026-05-24 13:45:40,764 - INFO - Inserted: purchase_prices - Rows: 12261
+2026-05-24 13:45:40,764 - INFO - Inserted: begin_inventory - Rows: 206529
+2026-05-24 13:45:40,765 - INFO - Inserted: end_inventory - Rows: 224489
+2026-05-24 13:45:40,765 - INFO - Inserted: purchases - Rows: 2372474
+2026-05-24 13:45:40,765 - INFO - Inserted: sales - Rows: 12825363
+2026-05-24 13:45:40,765 - INFO - === Ingestion Complete ===
