@@ -164,8 +164,7 @@ Word Report + PowerPoint Presentation
 
 ### 1. Clone the repository
 ```bash
-git clone (https://github.com/wasifehsan786/Vendor_Performance_Project)
-cd Vendor_Performance_Project
+git clone [Vendor Performance Project](https://github.com/wasifehsan786/Vendor_Performance_Project)
 
 **2. Create virtual environment**
 ```bash
