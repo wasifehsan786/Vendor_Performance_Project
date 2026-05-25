@@ -162,11 +162,10 @@ Word Report + PowerPoint Presentation
 
 ## How to Run
 
-**1. Clone the repository**
+### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/vendor-performance-analysis.git
-cd vendor-performance-analysis
-```
+git clone https://github.com/wasifehsan786/Vendor_Performance_Project.git
+cd Vendor_Performance_Project
 
 **2. Create virtual environment**
 ```bash
